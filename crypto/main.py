@@ -4,6 +4,7 @@ import time
 import atexit
 import os
 
+set_driver(f'{os.getcwd()}')
 
 def check(webb):
     web = bs(webb.page_source, 'html.parser')
