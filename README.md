@@ -1,6 +1,4 @@
 # crypto-tracker
-note - this currently does not install chromium or adds it as a PATH variable which is required to run
-
 dynamically updating crypto prices off crypto.com
 
 running setup.bat is required for first time setup and will install python3 and following python libraries:
