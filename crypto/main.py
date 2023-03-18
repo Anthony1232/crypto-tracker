@@ -1,8 +1,15 @@
-from helium import *
-from bs4 import BeautifulSoup as bs
-import time
-import atexit
 import os
+import atexit
+import time
+
+try:
+    from helium import *
+    from bs4 import BeautifulSoup as bs
+except:
+    os.system('cmd /k "pip install helium"')
+    os.system('cmd /k "pip install BeautifulSoup"')
+    from helium import *
+    from bs4 import BeautifulSoup as bs
 
 set_driver(f'{os.getcwd()}')
 
