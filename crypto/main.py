@@ -6,8 +6,9 @@ try:
     from helium import *
     from bs4 import BeautifulSoup as bs
 except:
+    s = input('click enter to install helium + beautifulsoup (required python libraries)\n')
     os.system('cmd /k "pip install helium"')
-    os.system('cmd /k "pip install BeautifulSoup"')
+    os.system('cmd /k "pip install BeautifulSoup4"')
     from helium import *
     from bs4 import BeautifulSoup as bs
 
@@ -38,7 +39,7 @@ def main():
         while True:
             os.system('cls')
             cryptos = check(web)
-            print('please exit program with ctr+c\nfailure to do so will leave applications open\n\n')
+            print('\nplease exit program with ctr+c\nfailure to do so will leave applications open\n\n')
             for name, price in cryptos:
                 print(f'{name}: {price}')
             time.sleep(10)
